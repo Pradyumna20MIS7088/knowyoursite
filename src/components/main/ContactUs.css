@@ -1,0 +1,55 @@
+.contact-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 60px; /* Adjust width as needed */
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #b0afaf;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    margin-right: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  }
+  
+  .contact-dropdown.active {
+    display: flex;
+  }
+  
+  .contact-dropdown a {
+    text-decoration: none;
+  }
+  
+  .contact-dropdown img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  .contact-dropdown img:hover {
+    transform: scale(1.1); /* Hover effect - slightly scale up the image */
+  }
+  
+  .contact-dropdown a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .contact-dropdown {
+      width: 100px; /* Adjust width for smaller screens */
+      top: calc(100% + 5px); /* Adjust top position */
+      padding: 8px; /* Adjust padding */
+    }
+  
+    .contact-dropdown img {
+      width: 25px; /* Decrease image size for smaller screens */
+      height: 25px;
+    }
+  }
+  

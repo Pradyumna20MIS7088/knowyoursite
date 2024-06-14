@@ -1,0 +1,88 @@
+.course-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none; /* Remove bullets */
+  }
+  
+  .section ul li {
+    flex-basis: calc(29.33% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+    margin-left: 0; /* Add left margin */
+  }
+  
+  .section ul li:hover {
+    transform: translateY(-5px);
+  }
+  
+  .section ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .section ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Remove underline only for images */
+  .section ul li img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the span elements */
+  .section ul li span {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2c2d2e;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .section ul li {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .section ul li {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
